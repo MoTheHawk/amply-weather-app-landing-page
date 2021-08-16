@@ -1,0 +1,125 @@
+@import url("https://use.typekit.net/xdb7exs.css");
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Georgia', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  color: #606060;
+  background: #D1F6FF;
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  background-position: 30%;
+  background-repeat: no-repeat;
+  @media only screen and (min-width: 768px) {
+    background-position: 10%;
+  }
+  @media only screen and (min-width: 992px) {
+    background-size: cover;
+    background-position: left;
+  }
+}
+
+#root {
+  padding-top: 10px;
+  @media only screen and (min-width: 768px) {
+    height: 100vh;
+  }
+}
+
+#main {
+  @media only screen and (min-width: 768px) {
+    height: 100%;
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+  }
+}
+
+#main .row {
+  @media only screen and (min-width: 768px) {
+    width: 100%;
+    margin: 0 !important;
+  }
+}
+
+#content {
+  min-width: 340px;
+  padding: 20px 15px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.88);
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    display: flex!important;
+    flex-direction: row!important;
+    align-items: center!important;
+    justify-content: center!important;
+    > :first-child {
+      width: 55%;
+    }
+    > :nth-child(2) {
+      width: 45%;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.header {
+  max-width: 300px;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0 auto 10px;
+  @media only screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  @media only screen and (min-width: 768px) {
+    max-width: 360px;
+  }
+}
+
+#weather {
+  min-width: 300px;
+  max-width: 360px;
+  height: 160px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 0 auto 30px;
+  background: linear-gradient(#9FECFF, #D1F6FF);
+  box-shadow: inset 4px 4px 5px 2px rgba(0,0,0,0.1);
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    margin-bottom: 0;
+  }
+}
+
+#cta-button {
+  font-family: 'century-gothic', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: white;
+  background: linear-gradient(#FFAF37, #FF9900);
+  border: none;
+  max-width: 300px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.1);
+  &:hover {
+    background: linear-gradient(#FF9900, #FFAF37);
+  }
+  &:active {
+    background: #FF9900;
+    box-shadow: inset 4px 4px 5px 2px rgba(0,0,0,0.1);
+    color: #F8F8F8;
+  }
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 30px auto 15px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
