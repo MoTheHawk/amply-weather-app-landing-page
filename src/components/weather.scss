@@ -1,0 +1,77 @@
+#weather {
+    min-width: 280px;
+    max-width: 360px;
+    height: 160px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 0 auto 30px;
+    background: linear-gradient(#aeefff, #D1F6FF);
+    box-shadow: inset 4px 4px 5px 2px rgba(0,0,0,0.1);
+
+    img {
+        height: 90%;
+    }
+
+    > * {
+      font-family: 'century-gothic', sans-serif;
+      letter-spacing: 0.05em;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: left;
+      color: #7E7E7E;
+    }
+
+    > :first-child {
+      margin: 0 auto;
+    }
+
+    > :nth-child(2):first-child {
+      padding-right: 0;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+        margin-bottom: 0;
+    }
+}
+
+#location {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #606060;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+}
+
+#temps_col {
+    padding-left: 10px;
+}
+
+#temps {
+    margin-left: 10px;
+}
+
+#temp {
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0;
+    color: #606060;
+}
+
+#tomorrow {
+    border-top: 2px solid rgba(0,0,0,0.2);
+    margin-top: 10px;
+
+    > .row {
+        margin-top: 10px;
+    }
+
+    #tomorrow_desc_col {
+        padding-right: 0;
+    }
+
+    #tomorrow_icon_col {
+        padding: 0;
+    }
+}
