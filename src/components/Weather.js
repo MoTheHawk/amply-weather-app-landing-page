@@ -5,7 +5,10 @@ import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
 
 function Weather(weather) {
-    return (
+    if(weather.today === null) {
+      return null
+    } else {
+      return (
         <>
             <Container id="weather">
                 <Row>
@@ -66,7 +69,8 @@ function Weather(weather) {
                 </Row>
             </Container>
         </>
-    );
+      );
+    }
 }
 
 export default Weather
